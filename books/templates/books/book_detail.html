@@ -1,0 +1,9 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>{{ book.title }}</h1>
+    <h2>{{ book.author }}</h2>
+    <h3>{{ book.summary }}</h3>
+    <h4>{{ book.reading_status }}</h4>
+    <a href="{% url 'book-list' %}">back</a>
+{% endblock %}
